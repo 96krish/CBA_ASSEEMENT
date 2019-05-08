@@ -10,5 +10,5 @@ compiler:
  - ./test 
  - gcc -o test digit_p.c // we can use gcc instead of clang too
  - ./test 
- - gcc -o test Diamond.c // we can use gcc instead of clang too
+ - gcc -o test Dimond.c // we can use gcc instead of clang too
  - ./test 
