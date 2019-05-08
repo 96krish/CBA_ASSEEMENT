@@ -1,14 +1,16 @@
-language: c
-sudo: false # only for faster builds
-compiler: 
- - clang
- - gcc
- script:
- - gcc -o test pyramid.c // we can use gcc instead of clang too
- - ./pyramid 
- - gcc -o test reverse_pyramid.c // we can use gcc instead of clang too
- - ./reverse_pyramid 
- - gcc -o test digit_p.c // we can use gcc instead of clang too
- - ./digit_p
- - gcc -o test Dimond.c // we can use gcc instead of clang too
- - ./Dimond 
+matrix:
+include:    
+language: c  
+sudo: false # only for faster builds  
+compiler:
+- clang
+- gcc
+script:  
+- gcc -o pyramid pyramid.c 
+- ./pyramid
+- gcc -o digit_p digit_p.c 
+- ./digit_p
+- gcc -o Dimond Dimond.c 
+- ./Dimond
+- gcc -o reverse_pyramid reverse_pyramid.c 
+- ./reverse_pyramid.c
