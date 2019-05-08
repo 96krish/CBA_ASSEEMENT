@@ -5,10 +5,10 @@ compiler:
  - gcc
  script:
  - gcc -o test pyramid.c // we can use gcc instead of clang too
- - ./test 
+ - ./pyramid 
  - gcc -o test reverse_pyramid.c // we can use gcc instead of clang too
- - ./test 
+ - ./reverse_pyramid 
  - gcc -o test digit_p.c // we can use gcc instead of clang too
- - ./test 
+ - ./digit_p
  - gcc -o test Dimond.c // we can use gcc instead of clang too
- - ./test 
+ - ./Dimond 
