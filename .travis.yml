@@ -6,3 +6,9 @@ compiler:
  script:
  - gcc -o test pyramid.c // we can use gcc instead of clang too
  - ./test 
+ - gcc -o test reverse_pyramid.c // we can use gcc instead of clang too
+ - ./test 
+ - gcc -o test digit_p.c // we can use gcc instead of clang too
+ - ./test 
+ - gcc -o test Diamond.c // we can use gcc instead of clang too
+ - ./test 
