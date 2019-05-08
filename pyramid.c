@@ -6,8 +6,8 @@ int main()
 
   printf(" number of rows in pyramid of stars you wish to see = 4\n");
   //scanf("%d", &n);
-
-  s = 4;
+  n=4;
+  s = n;
 
   for (row = 1; row <= n; row++)  // Loop to print rows
   {
