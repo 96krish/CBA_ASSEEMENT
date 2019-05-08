@@ -1,16 +1,16 @@
 matrix:
-include:    
-language: c  
-sudo: false # only for faster builds  
-compiler:
-- clang
-- gcc
-script:  
-- gcc -o pyramid pyramid.c 
-- ./pyramid
-- gcc -o digit_p digit_p.c 
-- ./digit_p
-- gcc -o Dimond Dimond.c 
-- ./Dimond
-- gcc -o reverse_pyramid reverse_pyramid.c 
-- ./reverse_pyramid.c
+  include:    
+    - language: c  
+      sudo: false # only for faster builds  
+      compiler:
+        - clang
+        - gcc
+      script:  
+        - gcc -o pyramid pyramid.c 
+        - ./pyramid
+        - gcc -o digit_p digit_p.c
+        - ./digit_p
+        - gcc -o Dimond Dimond.c
+        - ./Dimond
+        - gcc -o reverse_pyramid reverse_pyramid.c
+        - ./reverse_pyramid
